@@ -23,7 +23,7 @@ define(function() {
 
       // If the input of parseInt is not a number it will return NaN
       // so this trick works.
-      return ret || parseInt(num) || false;
+      return ret || parseInt(num, 10) || false;
     }
   };
 });
